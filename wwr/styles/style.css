@@ -1,17 +1,49 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
+body{
     background-color:#f0f8ff;
+    font-family: 'Rock Salt', 'Bradley Hand', 'sans-serif';
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header{
     background-color:#a2cebf;
+    font-family: 'Rock Salt', 'Bradley Hand', 'sans-serif';
+    margin: 0;
+}
+
+.home-title{
+    background-color:#a2cebf;
+    font-family: 'Rock Salt', 'Bradley Hand', 'sans-serif';
+    font-size: 2em;
 }
 
 nav a:hover{
-    background-color:#ff0000;
+    text-decoration: none;
+    color:#ff0000;
+    text-align: center;
+    padding: 35px;
+
 }
 
-.book, .join, .book:hover, .join:hover{
-    background-color:#f0ffff;
+.book, .join{
+    background-color:#accece;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.card-img{
+    border: 10px solid #accece
+}
+
+main section img {
+    box-sizing: border-box;
 }
 
 #background{
@@ -21,12 +53,13 @@ nav a:hover{
 
 .msg{
     background-color:#ffe4c4;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
-footer{
-    background-color:#ffe4c4;
+.msg p{
+    padding-bottom: 15px;
 }
-
 #content{
     max-width:1600px;
     margin: 0 auto;
@@ -37,6 +70,22 @@ nav a, #hero-msg h1,#hero-msg h4,.button-box,section{
     text-align: center;
 }
 
+nav a{
+    text-decoration: none;
+    color:#f0f8ff;
+    padding: 35px;
+}
+
 .icon{
     width: 80px;
+    padding-top: 10px;
+}
+
+footer{
+    background-color:#ffe4c4;
+    padding: 25px 50px;
+}
+
+footer .social img{
+    padding-top: 15px;
 }
