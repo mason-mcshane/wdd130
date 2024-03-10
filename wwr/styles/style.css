@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@500&family=Ubuntu&display=swap');
+
 
 body{
     background-color:#f0f8ff;
-    font-family: 'Rock Salt', 'Bradley Hand', 'sans-serif';
+    font-family: 'Ubuntu', 'Roboto', 'Montserrat';
     font-size: 22px;
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@ body{
 
 header{
     background-color:#a2cebf;
-    font-family: 'Rock Salt', 'Bradley Hand', 'sans-serif';
+    font-family: 'Ubuntu', 'Roboto', 'Montserrat';
     margin: 0;
     display: grid;
     grid-template-columns: 150px auto;
@@ -18,8 +19,13 @@ header{
 
 .home-title{
     background-color:#a2cebf;
-    font-family: 'Rock Salt', 'Bradley Hand', 'sans-serif';
+    font-family: 'Ubuntu', 'Roboto', 'Montserrat';
     font-size: 2em;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
 }
 
 nav {
