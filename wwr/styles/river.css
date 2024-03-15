@@ -1,0 +1,109 @@
+body{
+    background-color:#f0f8ff;
+    font-family: 'Ubuntu', 'Roboto', 'Montserrat';
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:#a2cebf;
+    font-family: 'Ubuntu', 'Roboto', 'Montserrat';
+    margin: 0;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+.home-title{
+    background-color:#a2cebf;
+    font-family: 'Ubuntu', 'Roboto', 'Montserrat';
+    font-size: 2em;
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr 3fr 3fr;;
+    grid-template-rows:  4fr 1fr 4fr;
+    padding-top: 180px;
+}
+
+#Paragraph1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#Paragraph2{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#Picture1{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 10px solid #accece;
+    transition: transform .5s;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#Picture2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border: 10px solid #accece;
+    transition: transform .5s;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#content{
+    max-width:1600px;
+    margin: 0 auto;
+}
+
+nav {
+    text-decoration: none;
+    color:#ff0000;
+    text-align: center;
+    padding: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+.icon{
+    width: 80px;
+    padding-top: 10px;
+}
+footer{
+    background-color:#ffe4c4;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .social img{
+    padding-top: 15px;
+}
