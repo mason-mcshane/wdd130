@@ -1,0 +1,138 @@
+body{
+    background-color:#1D263B;
+    font-family: 'Montserrat', 'Roboto', 'Anta';
+    color:white;
+    font-size: 16px;
+    padding: 0;
+}
+
+header, body, footer{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header{
+    background-color:#A0EADE;
+    font-family: 'Montserrat', 'Roboto', 'Anta';
+    margin: 0;
+    width: 100%;
+    color:black;
+    text-align: center;
+    vertical-align: middle;
+    height: 100px;
+    font-size: 40px;
+}
+
+.Home-main{
+    background-color:#157F1F;
+    font-family: 'Montserrat', 'Roboto', 'Anta';
+    font-size: 2em;
+    padding: 15px;
+}
+
+.Top-Main{
+    background-color:#157F1F;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    grid-template-rows: 4fr 1fr 2fr;
+}
+
+#Home-Header-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+}
+
+#home-image-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    transition: transform .5s;
+    box-sizing: border-box;
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+#Home-Paragraph-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+    padding: 10px;
+    margin-top: -35px;
+}
+
+#Home-Header-2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+}
+
+#home-image-2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    transition: transform .5s;
+    box-sizing: border-box;
+    max-width: 100%;
+    justify-content: center;
+}
+
+#Home-Paragraph-2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+    padding: 10px;
+    margin-top: -35px;
+}
+
+.Home-bottom-main{
+    background-color:#157F1F;
+}
+
+.Home-bottom-main h3{
+    text-align: center;
+}
+
+#Home-Paragraph-3{
+    
+}
+
+#Home-Paragraph-4{
+    
+}
+
+#Home-parparaph-5{
+    
+}
+
+#Home-parparaph-6{
+    
+}
+
+#Home-parparaph-7{
+    
+}
+
+footer{
+    background-color:#A0EADE;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    color:black;
+}
+.footer-paragraph{
+    width: 50%;
+}
+
