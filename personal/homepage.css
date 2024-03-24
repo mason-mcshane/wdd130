@@ -20,7 +20,7 @@ header{
     text-align: center;
     vertical-align: middle;
     height: 100px;
-    font-size: 40px;
+    font-size: 38px;
 }
 
 .Home-main{
@@ -34,8 +34,8 @@ header{
     background-color:#157F1F;
     width: 100%;
     display: grid;
-    grid-template-columns: 4fr 1fr 4fr;
-    grid-template-rows: 4fr 1fr 2fr;
+    grid-template-columns: 5fr 1fr 5fr;
+    grid-template-rows: 4fr 1fr 2fr; 
 }
 
 #Home-Header-1{
@@ -54,7 +54,6 @@ header{
     transition: transform .5s;
     box-sizing: border-box;
     max-width: 100%;
-    justify-content: center;
     text-align: center;
 }
 
