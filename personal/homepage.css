@@ -104,26 +104,6 @@ header{
     text-align: center;
 }
 
-#Home-Paragraph-3{
-    
-}
-
-#Home-Paragraph-4{
-    
-}
-
-#Home-parparaph-5{
-    
-}
-
-#Home-parparaph-6{
-    
-}
-
-#Home-parparaph-7{
-    
-}
-
 footer{
     background-color:#A0EADE;
     font-size: 22px;
@@ -133,5 +113,13 @@ footer{
 }
 .footer-paragraph{
     width: 50%;
+    margin-left: 30px;
 }
+
+#sp-link{
+    margin-left: 175px;
+    margin-top: 20px;
+}
+
+
 
