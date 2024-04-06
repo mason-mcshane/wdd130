@@ -4,36 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link type="text/css" rel="stylesheet" href="styles.style" />
+    <link type="text/css" rel="stylesheet" href="styles/child2.css"/>
+    <style>
+        .dropbtn {
+          background-color: #3498DB;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .dropbtn:hover, .dropbtn:focus {
+          background-color: #2980B9;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          overflow: auto;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown a:hover {background-color: #ddd;}
+        
+        .show {display: block;}
+        </style>
 </head>
 <body>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
     <header>
         <h1>[Marvel Character Page]</h1>
-        <a href="index.html"><h3>Return Home</h3></a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Home Page</a>
+                <a href="site-plan.html">Site Plan</a>
+                <a href="child-page-1.html">Star-Wars Page</a>
     </header>
 <main class="marvel-main">
     <p id="marvel-paragraph-1">
-      This page will highlight the indivdual abilities of Iron Man and Captian America, which will be next to their respective photos as the
-      wireframe outline depicts. It will highlight their strengths and weaknesses, and, for the purposes of this page one main strength and one main
-      weakness against their opponent.
-    </p>
-    <p id="marvel-paragraph-2">
       Iron Man is the more offensive Character of this pair. He has a lot of quick barrage style attacks that come from his suit which can be lethal
       if he is to use them at the correct time. He also has the ability to fly, but for the sake of this matchup, not very far, high, or for very long
       periods of time.
     </p>
-    <p id="marvel-paragraph-3">
+    <p id="marvel-paragraph-2">
      Captian America is the more defensive Character of this pair, but he has extremely efficient shield usage. for the purposes of this website we are
      assuming that his shield can withstand any lightsaber strike and that he can summon it back at any time. He also has a good amount of raw strength 
      that would be a soild contender to that of Anakins strong abilites.
     </p>
-    <p>Images for the Page 3</p>
+    <p id="marvel-paragraph-3">
+        Iron Man and Captain America fight well together when they take the time to plan out in advance. 
+        While they haven't trained together for as long as Anakin and Obi-Wan, they are certainly
+        capable of putting up a good fight.
+      </p>
       <img src="images/Iron Man.png" alt="image for page3" id="marvel-image-1">
       <img src="images/Captain America.png" alt="image for page3" id="marvel-image-2">
+      <img src="images/Iron-Man-and-Captian-America.png" alt="image for page3" id="marvel-image-3">
 </main>
     <footer>
         <p class="footer-paragraph">Personal Project &copy; 2024 - Mason McShane</p>
-        <a href="site-plan.html">Site Plan</a>
+        <a href="site-plan.html" id="sp-link">Site Plan</a>
+        <a href="index.html" id="home-link">Main Page</a>
     </footer>
 </body>
 </html>
